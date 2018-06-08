@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://127.0.0.1:9000/08_CSS_Fonts.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style id="stndz-style">div[class*="item-container-obpd"], a[data-redirect*="paid.outbrain.com"], a[onmousedown*="paid.outbrain.com"] { display: none !important; } a div[class*="item-container-ad"] { height: 0px !important; overflow: hidden !important; position: absolute !important; } div[data-item-syndicated="true"] { display: none !important; } .grv_is_sponsored { display: none !important; } .zergnet-widget-related { display: none !important; } </style>
+    
+    <title>CSS FONTS</title>
+    <link href="./CSS FONTS_files/css" rel="stylesheet">
+    <style>
+        div{
+            background-color: orange;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+        }
+        #arial{
+            font-family: Arial, sans-serif;
+        }
+        #georgia{
+            font-family:Georgia, sans-serif;
+        }
+        #lucida{
+            font-family:"Lucida Console", monospace;
+        }
+        #google{
+            font-family: 'Inconsolata', monospace;
+        }
+    </style>
+</head>
+<body>
+    <!-- FONT FAMILY -->
+    <div>
+        <h1 id="arial">I am From Arial Font Local</h1>
+    </div>
+
+    <div>
+        <h1 id="georgia">I am From Georgia Font Local</h1>
+    </div>
+
+    <div>
+        <h1 id="lucida">I am From Lucida Console Font Local</h1>
+    </div>
+
+    <div>
+        <h1 id="google">I am From Some Font Google</h1>
+    </div>
+
+    <!-- CUSTOM FONT -->
+    <div>
+        <h1 id="custom">I am a Custom font</h1>
+    </div>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]>
+</script>
+
+</body></html>

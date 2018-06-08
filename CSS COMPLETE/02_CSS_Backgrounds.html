@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Backgrounds</title>
+    <style>
+        .backgroundImage{
+            width: 500px;
+            height: 200px;
+            background-image: url("img/background.jpg");
+            font-family: "Comic Sans MS", sans-serif;
+            padding: 10px;
+        }
+
+        .imagePosition{
+            width: 500px;
+            height: 200px;
+            background-color: lightgreen;
+            background-image: url("img/nature.jpg");
+            background-repeat: no-repeat;
+            background-position: right top;
+        }
+
+        .imageRepeat{
+            width: 500px;
+            height: 200px;
+            background-color: lightgreen;
+            background-image: url("img/nature.jpg");
+            background-repeat:repeat-x;
+            background-position: right top;
+        }
+
+        .bgAttachment{
+            height: 200px;
+            background: white url("img/gallery2.jpeg") no-repeat fixed bottom;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- BACKGROUND COLOR -->
+<p style="background-color: teal">I am TEAL background</p>
+
+<br>
+<!-- BACKGROUND ATTACHMENT -->
+<div class="bgAttachment"></div>
+
+<br>
+<!-- BACKGROUND IMAGE -->
+<div class="backgroundImage">
+    <h2>HTML</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur blanditiis doloremque ducimus eligendi et perspiciatis, sint. Animi assumenda at consequatur eaque, error exercitationem hic in iure laborum maiores modi nam necessitatibus neque nisi non placeat praesentium reiciendis sequi soluta tempore.</p>
+</div>
+
+<br>
+<!-- BACKGROUND IMAGE POSITION -->
+<div class="imagePosition">
+</div>
+<br>
+<!-- BACKGROUND IMAGE REPEAT -->
+<div class="imageRepeat">
+</div>
+
+</body>
+</html>
